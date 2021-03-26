@@ -12,6 +12,9 @@ mif = 0     # model already generated? (model in file?) - 0/no, 1/yes
 sg = 1      # show graph - 0/no, 1/yes
 dia = 7     # days in advance
 
+e1, e2, e3, e4, e5 = 0, 0, 0, 0, 0  # if user decides to comment out a particular model, the function on line 25 wont
+# put up an error
+
 start = time.time()
 e1 = fst.main(perc=pc, epochs=epc, tsteps=tsp, modinfile=mif, showgraph=sg)     # First model
 e2 = scd.main(perc=pc, epochs=epc, tsteps=tsp, modinfile=mif, showgraph=sg)     # Second model
